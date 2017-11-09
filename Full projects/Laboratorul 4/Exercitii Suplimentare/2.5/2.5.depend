@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1510245141 source:c:\users\evohu\desktop\object oriented programming\laboratorul 4\exercitii suplimentare\2.5\main.cpp
+	<iostream>
+	<list>
+	<algorithm>
+	<string>
+	"lab4.h"
+
+1510245242 c:\users\evohu\desktop\object oriented programming\laboratorul 4\exercitii suplimentare\2.5\lab4.h
+
+1510246155 source:c:\users\evohu\desktop\object oriented programming\laboratorul 4\exercitii suplimentare\2.5\lab4.cpp
+	<iostream>
+	<list>
+	<string>
+	"lab4.h"
+

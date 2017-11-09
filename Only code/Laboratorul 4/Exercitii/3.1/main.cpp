@@ -1,3 +1,5 @@
+/// 3.1 Modificati codul de mai sus astfel incit sa folositi B b in loc de B *b
+
 #include <iostream>
 #include <string>
 

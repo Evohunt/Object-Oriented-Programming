@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1510321075 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 5\tema de acasa\t.5.2\lab5.cpp
+	<iostream>
+	"lab5.h"
+
+1510320734 c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 5\tema de acasa\t.5.2\lab5.h
+
+1510319682 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 5\tema de acasa\t.5.2\main.cpp
+	<iostream>
+	"lab5.h"
+

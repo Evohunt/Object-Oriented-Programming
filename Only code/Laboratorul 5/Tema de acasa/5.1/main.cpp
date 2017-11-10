@@ -1,3 +1,7 @@
+/// T.5.1 Modificati exemplul anterior si scrieti o metoda calculArie(), membru al clasei Form, care  
+/// calculeaza aria figurii geometrice. Ce ar trebui sa returneze ? Pentru fiecare clasa extinsa,
+/// supraincarcati metoda calculArie.
+
 #include <iostream>
 
 using namespace std;

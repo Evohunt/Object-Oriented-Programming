@@ -12,7 +12,10 @@ using namespace std;
 
 int main()
 {
+
+    ios_base::sync_with_stdio(false);
     system("color 03");
+
     Operatii *op = new Operatii;
     double numarReal = -335.3647;
     NumarComplex numarComplex (2353.5768, -4657.346547);

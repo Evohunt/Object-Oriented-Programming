@@ -14,6 +14,7 @@ using namespace std;
 int main()
 {
 
+    ios_base::sync_with_stdio(false);
     system("color 03");
 
     Operatii *op = new Operatii;

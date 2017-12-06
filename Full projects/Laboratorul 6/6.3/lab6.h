@@ -1,5 +1,9 @@
 using namespace std;
 
+#define CONSTR
+#define OVERLOAD
+#define NORMAL
+
 struct NumarComplex {
 
     double parteReala;
@@ -17,27 +21,23 @@ struct NumarComplex {
 
 class Operatii {
 
-    double firstDouble;
-    double secondDouble;
-
-    NumarComplex firstComplex;
-    NumarComplex secondComplex;
-
     public:
-        Operatii(double firstDouble, double secondDouble) {
+        CONSTR Operatii(double firstDouble, double secondDouble) {}
+        CONSTR Operatii(NumarComplex firstComplex, NumarComplex secondComplex) {}
+        CONSTR Operatii() = default;
 
-            this -> firstDouble = firstDouble;
-            this -> secondDouble = secondDouble;
+        OVERLOAD double Suma(double firstDouble, double secondDouble);
+        OVERLOAD NumarComplex Suma(NumarComplex firstComplex, NumarComplex secondComplex);
 
-        }
-        Operatii(NumarComplex firstComplex, NumarComplex secondComplex) {
+        OVERLOAD double Diferenta(double firstDouble, double secondDouble);
+        OVERLOAD NumarComplex Diferenta(NumarComplex firstComplex, NumarComplex secondComplex);
 
-            this -> firstComplex.parteReala = firstComplex.parteReala;
-            this -> firstComplex.parteImaginara = firstComplex.parteImaginara;
+        OVERLOAD double Produs(double firstDouble, double secondDouble);
+        OVERLOAD NumarComplex Produs(NumarComplex firstComplex, NumarComplex secondComplex);
 
-            this -> secondComplex.parteReala = secondComplex.parteReala;
-            this -> secondComplex.parteImaginara = secondComplex.parteImaginara;
+        OVERLOAD double Raport(double firstDouble, double secondDouble);
+        OVERLOAD NumarComplex Raport(NumarComplex firstComplex, NumarComplex secondComplex);
 
-        }
+        NORMAL void afisareComplex(NumarComplex numarComplex);
 
 };

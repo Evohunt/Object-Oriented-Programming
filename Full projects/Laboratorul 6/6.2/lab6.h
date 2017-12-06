@@ -1,13 +1,13 @@
 using namespace std;
 
-#define CONSTR
 #define OVERLOAD
-#define NORMAL
 
 struct NumarComplex {
 
     double parteReala;
     double parteImaginara;
+
+    NumarComplex();
 
     NumarComplex (double x, double y) :
         parteReala(x),
@@ -19,16 +19,12 @@ struct NumarComplex {
 
 class Operatii {
 
-    static double numarReal;
-    static NumarComplex numarComplex;
-
     public:
-        CONSTR Operatii();
 
-        OVERLOAD static double Modul(double tempVar);
-        OVERLOAD static double Modul(NumarComplex tempVar);
+        OVERLOAD static double Modul(double numarReal);
+        OVERLOAD static double Modul(NumarComplex numarComplex);
 
-        NORMAL static double getReal();
-        NORMAL static NumarComplex getComplex();
+        OVERLOAD void afisareNumar(double numarReal);
+        OVERLOAD void afisareNumar(NumarComplex numarComplex);
 
 };

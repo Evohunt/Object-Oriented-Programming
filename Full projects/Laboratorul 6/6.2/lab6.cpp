@@ -4,29 +4,44 @@
 
 using namespace std;
 
-double Operatii::Modul(double tempVar) {
+double Operatii::Modul(double numarReal) {
 
     return abs(numarReal);
 
 }
 
-double Operatii::Modul(NumarComplex tempVar) {
+double Operatii::Modul(NumarComplex numarComplex) {
 
     return sqrt( pow(numarComplex.parteReala, 2) + pow(numarComplex.parteImaginara, 2) );
 
 }
 
-double Operatii::getReal() {
+void Operatii::afisareNumar(NumarComplex numarComplex) {
 
-    return numarReal;
+    if (numarComplex.parteImaginara < 0) {
+
+        cout << numarComplex.parteReala << " - " << abs(numarComplex.parteImaginara) << 'i' << '\n';
+
+    }
+    else if (numarComplex.parteImaginara > 0) {
+
+        cout << numarComplex.parteReala << " + " << numarComplex.parteImaginara << 'i' << '\n';
+
+    }
+    else {
+
+        cout << numarComplex.parteReala << '\n';
+
+    }
 
 }
 
-NumarComplex Operatii::getComplex() {
+void Operatii::afisareNumar(double numarReal) {
 
-    return numarComplex;
+    cout << numarReal << '\n';
 
 }
+
 
 
 

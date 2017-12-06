@@ -4,11 +4,16 @@
 /// supraîncărcate (același nume).
 
 #include <iostream>
+#include <cmath>
+#include <iomanip>
+#include "lab6.h"
 
 using namespace std;
 
 int main()
 {
+
+    Operatii *op = new Operatii(3, 5);
 
     return 0;
 }

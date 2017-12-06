@@ -4,28 +4,15 @@
 
 using namespace std;
 
-Operatii::Operatii(NumarComplex numarComplex) {
+float Operatii::Modul(NumarComplex numarComplex) {
 
-    this -> numarComplex.parteReala = numarComplex.parteReala;
-    this -> numarComplex.parteImaginara = numarComplex.parteImaginara;
-
-}
-
-Operatii::Operatii(double numarReal) {
-
-    this -> numarReal = numarReal;
+    return sqrt( pow(numarComplex.parteReala, 2) + pow(numarComplex.parteImaginara, 2) );
 
 }
 
-double Operatii::Modul(NumarComplex tempVar) {
+float Operatii::Modul(float numarReal) {
 
-    return sqrt( pow(this -> numarComplex.parteReala, 2) + pow(this -> numarComplex.parteImaginara, 2) );
-
-}
-
-double Operatii::Modul(double tempVar) {
-
-    return abs(this -> numarReal);
+    return fabs(numarReal);
 
 }
 
@@ -49,7 +36,7 @@ void Operatii::afisareNumar(NumarComplex numarComplex) {
 
 }
 
-void Operatii::afisareNumar(double numarReal) {
+void Operatii::afisareNumar(float numarReal) {
 
     cout << numarReal << '\n';
 

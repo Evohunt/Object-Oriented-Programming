@@ -1,28 +1,30 @@
 using namespace std;
 
-#define CONSTR
 #define OVERLOAD
 
 struct NumarComplex {
 
-    double parteReala;
-    double parteImaginara;
+    float parteReala;
+    float parteImaginara;
+
+    NumarComplex();
+
+    NumarComplex(float x, float y) :
+        parteReala(x),
+        parteImaginara(y)
+    {}
+
 
 };
 
 class Operatii {
 
-    NumarComplex numarComplex;
-    double numarReal;
-
     public:
-        CONSTR Operatii(NumarComplex numarComplex);
-        CONSTR Operatii(double numarReal);
 
-        OVERLOAD double Modul(double tempVar);
-        OVERLOAD double Modul(NumarComplex tempVar);
+        OVERLOAD float Modul(float numarReal);
+        OVERLOAD float Modul(NumarComplex numarComplex);
 
         OVERLOAD void afisareNumar(NumarComplex numarComplex);
-        OVERLOAD void afisareNumar(double numarReal);
+        OVERLOAD void afisareNumar(float numarReal);
 
 };

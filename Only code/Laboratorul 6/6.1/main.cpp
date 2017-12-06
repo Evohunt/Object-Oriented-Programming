@@ -4,37 +4,41 @@
 /// metoda afisare, supraîncărcată, care afișează un număr real sau complex.
 
 #include <iostream>
+#include <stdlib.h>
 #include <cmath>
 #include <iomanip>
 #include "lab6.h"
 
 using namespace std;
 
-NumarComplex tempComplex;
-double tempDouble;
-
 int main()
 {
 
-    NumarComplex z;
-    z.parteReala = 2.34757;
-    z.parteImaginara = -4.567;
-    Operatii *op = new Operatii(z);
+    system("color 03");
 
-    cout << "Numar complex: ";
-    op -> afisareNumar(z);
-    cout << "Modul numar complex: " << fixed << setprecision(3) << op -> Modul(tempComplex) << '\n';
+    Operatii *op = new Operatii;
+
+    float numarReal = -346.46545;
+    NumarComplex numarComplex (-133.3646, 4757.354346);
+
+    cout << "Numar real: ";
+    cout << fixed << setprecision(5);
+    op -> afisareNumar(numarReal);
+
+    cout << "Modul numar real, precizie 3: ";
+    cout << fixed << setprecision(3) << op -> Modul(numarReal) << '\n';
 
 
     cout << '\n';
 
 
-    double x = -4545.23543;
-    *op = Operatii(x);
+    cout << "Numar complex: ";
+    op -> afisareNumar(numarComplex);
 
-    cout << "Numar real: ";
-    op -> afisareNumar(x);
-    cout << "Modul numar real: " << op -> Modul(tempDouble) << '\n';
+    cout << "Modul numar complex, precizie 3: ";
+    cout << fixed << setprecision(3) << op -> Modul(numarComplex);
+
+    cout << '\n';
 
     return 0;
 }

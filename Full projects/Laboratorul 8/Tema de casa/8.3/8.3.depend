@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1513417414 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 8\tema de casa\8.3\lab8.cpp
+	<iostream>
+	<ctime>
+	<random>
+	<stdlib.h>
+	"lab8.h"
+
+1513417276 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 8\tema de casa\8.3\main.cpp
+	<iostream>
+	<ctime>
+	<random>
+	<stdlib.h>
+	"lab8.h"
+
+1513417605 c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 8\tema de casa\8.3\lab8.h
+

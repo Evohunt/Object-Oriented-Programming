@@ -1,4 +1,7 @@
 #include <iostream>
+#include <string>
+#include <thread>
+#include <chrono>
 #include <stdlib.h>
 #include "lab9.h"
 
@@ -50,10 +53,14 @@ int Sling::getResistance() {
 
 void Sling::printWeapon() {
 
-    cout << "Name: " << getName() << '\n';
-    cout << "Resistance: " << getResistance() << " / 100" << '\n';
-    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n';
-    cout << "Classified: " << isClassified() << '\n';
+    cout << "Name: " << getName() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Resistance: " << getResistance() << " / 100" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Classified: " << isClassified() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
 
 }
 
@@ -78,10 +85,14 @@ int AtomicBomb::getReleasedEnergy() {
 
 void AtomicBomb::printWeapon() {
 
-    cout << "Name: " << getName() << '\n';
-    cout << "Power: " << getReleasedEnergy() << " megatons" << '\n';
-    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n';
-    cout << "Classified: " << isClassified() << '\n';
+    cout << "Name: " << getName() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Power: " << getReleasedEnergy() << " megatons" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Classified: " << isClassified() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
 
 }
 
@@ -106,10 +117,14 @@ int Gun::getMagazineCapacity() {
 
 void Gun::printWeapon() {
 
-    cout << "Name: " << getName() << '\n';
-    cout << "Magazine capacity: " << getMagazineCapacity() << " bullets" << '\n';
-    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n';
-    cout << "Classified: " << isClassified() << '\n';
+    cout << "Name: " << getName() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Magazine capacity: " << getMagazineCapacity() << " bullets" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Classified: " << isClassified() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
 
 }
 
@@ -134,30 +149,38 @@ int Rifle::getType() {
 
 void Rifle::printWeapon() {
 
-    cout << "Name: " << getName() << '\n';
+    cout << "Name: " << getName() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
     cout << "Type: " << getType();
     switch (getType()) {
 
         case 1:
-            cout << " (Automatic)\n";
+            cout << " (Automatic)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
         case 2:
-            cout << " (Semi-Automatic)\n";
+            cout << " (Semi-Automatic)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
         case 3:
-            cout << " (Hybrid)\n";
+            cout << " (Hybrid)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
         default:
-            cout << " (Unknown)\n";
+            cout << " (Unknown)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
     }
-    cout << "Magazine capacity: " << getMagazineCapacity() << " bullets" << '\n';
-    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n';
-    cout << "Classified: " << isClassified() << '\n';
+    cout << "Magazine capacity: " << getMagazineCapacity() << " bullets" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Classified: " << isClassified() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
 
 }
 
@@ -182,31 +205,40 @@ int MachineGun::getHeatingPoint() {
 
 void MachineGun::printWeapon() {
 
-    cout << "Name: " << getName() << '\n';
-    cout << "Overheating: " << getHeatingPoint() << " degrees" << '\n';
+    cout << "Name: " << getName() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Overheating: " << getHeatingPoint() << " degrees" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
     cout << "Type: " << getType();
     switch (getType()) {
 
         case 1:
-            cout << " (Automatic)\n";
+            cout << " (Automatic)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
         case 2:
-            cout << " (Semi-Automatic)\n";
+            cout << " (Semi-Automatic)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
         case 3:
-            cout << " (Hybrid)\n";
+            cout << " (Hybrid)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
         default:
-            cout << " (Unknown)\n";
+            cout << " (Unknown)\n" << flush;
+            this_thread::sleep_for(chrono::microseconds(70000));
             break;
 
     }
-    cout << "Magazine capacity: " << getMagazineCapacity() << " bullets" << '\n';
-    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n';
-    cout << "Classified: " << isClassified() << '\n';
+    cout << "Magazine capacity: " << getMagazineCapacity() << " bullets" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Danger rank: " << getDangerRank() << " / 10" << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
+    cout << "Classified: " << isClassified() << '\n' << flush;
+    this_thread::sleep_for(chrono::microseconds(70000));
 
 }
 

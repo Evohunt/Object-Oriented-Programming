@@ -18,7 +18,7 @@ class NumarComplex {
         {}
 
         OP_OVERLOAD double operator ~ ();
-        //double operator ^ (int power);
+        OP_OVERLOAD NumarComplex operator ^ (int power);
 
         NORMAL void print();
 

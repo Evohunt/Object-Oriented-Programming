@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1513630589 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 6\6.5\lab6.cpp
+	<iostream>
+	<cmath>
+	"lab6.h"
+
+1513630702 c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 6\6.5\lab6.h
+
+1513630454 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 6\6.5\main.cpp
+	<iostream>
+	<cmath>
+	<stdlib.h>
+	"lab6.h"
+

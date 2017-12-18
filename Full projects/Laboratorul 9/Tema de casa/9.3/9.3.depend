@@ -6,8 +6,11 @@
 
 1513514536 c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 9\tema de casa\9.3\lab9.h
 
-1513501888 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 9\tema de casa\9.3\main.cpp
+1513515335 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 9\tema de casa\9.3\main.cpp
 	<iostream>
+	<thread>
+	<chrono>
+	<conio.h>
 	<stdlib.h>
 	"lab9.h"
 

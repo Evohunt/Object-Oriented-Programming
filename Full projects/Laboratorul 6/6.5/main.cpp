@@ -18,6 +18,8 @@ int main()
     cout << "Numar complex: ";
     numarComplex.print();
     cout << "Modul: " << ~numarComplex << '\n';
+    cout << "Putere 2: ";
+    (numarComplex ^ 2).print();
 
     return 0;
 }

@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1513611571 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 7\tema de casa\7.1\angajat.cpp
+	<iostream>
+	"lab7.h"
+
+1513612164 c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 7\tema de casa\7.1\lab7.h
+	<iostream>
+
+1513612203 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 7\tema de casa\7.1\copil.cpp
+	<iostream>
+	"lab7.h"
+
+1513611974 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 7\tema de casa\7.1\main.cpp
+	<iostream>
+	<stdlib.h>
+	"lab7.h"
+
+1513609348 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 7\tema de casa\7.1\parinte.cpp
+	<iostream>
+	"lab7.h"
+
+1513609373 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 7\tema de casa\7.1\persoana.cpp
+	<iostream>
+	"lab7.h"
+
+1513610761 source:c:\users\evohu\desktop\object oriented programming\full projects\laboratorul 7\tema de casa\7.1\sofer.cpp
+	<iostream>
+	"lab7.h"
+

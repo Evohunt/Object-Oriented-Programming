@@ -1,3 +1,6 @@
+/// T.7.1 Proiectați o structură de 5 clase: Persoana, Sofer, Angajat, Copil, Parinte. Folosiți clase prietene și
+/// imbricate, după cum considerați necesar.
+
 #include <iostream>
 #include <stdlib.h>
 #include "lab7.h"
